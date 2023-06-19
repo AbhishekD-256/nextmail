@@ -1,0 +1,260 @@
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'utils/utilities';
+@import 'components/button';
+
+body {
+    @include bg-color($primary-color);
+    height: 100vh;
+    font-size: $base-font-size;
+    font-family: 'Open Sans', sans-serif;
+    color: $text-light-color;
+    overflow: hidden;
+}
+.header {
+    @include bg-color(#33495f);
+    position: relative;
+    height: 45px;
+
+    .tab-control {
+        position: absolute;
+        top:50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+
+    &__img {
+        max-width: 100px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.compose-img,
+.nav-icon,
+.search-bar__icon  {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.app {
+    height: calc(100% - 45px);
+}
+.navigation-container {
+    min-width: 200px;
+
+    ul+ul {
+        border-top: 1px solid rgba($text-light-color, 0.2);
+    }
+}
+.navigation {
+    padding: 30px 22px 0 15px;
+
+    .compose-btn {
+        margin-left: 15px;
+    }
+
+    &__heading {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    &__item {
+        padding: 9px 0 9px 15px;
+        cursor: pointer;
+        align-items: center;
+        font-weight: 600;
+
+        &:hover {
+            background-color: blueviolet;
+        }
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+        &.active {
+            color: $text-dark-color;
+            font-weight: bold;
+        }
+    }
+}
+.email-profile {
+    gap: 5px;
+    padding: 12px 15px;
+    align-items: center;
+    &__image  {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    &__name {
+        font-weight:600 ;
+        color: $text-dark-color;
+    }
+}
+
+.mail-repo {
+    @include bg-color(#f9f9f9);
+    min-width: 335px;
+    overflow-y: scroll;
+
+    &__header {
+        .search-bar {
+            @include bg-color($primary-color);
+            min-width: 275px;
+            border-radius: 21px;
+            border: solid 1px rgba(151, 151, 151, 0.1);
+            padding: 0 20px;
+
+            &__icon {
+                align-self:center;
+            }
+            input {
+                padding: 12px 0;
+                flex-grow: 1;
+                font-size: 14px;
+                &::placeholder {
+                    color: #8f929d;
+                }
+            }
+        }
+        .filter-container {
+            padding-top: 30px;
+        }
+    }
+}   
+
+.repo-item {
+    position: relative;
+    padding: 22px 30px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+
+    &__subject {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        position: relative;
+
+        span {
+            max-width: 200px;
+            display: inline-block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    &__sender {
+        font-weight: 600;
+    }
+    &.unread {
+        .repo-item__subject {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: -15px;
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                @include bg-color(#379aff)
+            }
+        }
+    }
+
+    &.active {
+        @include bg-color($primary-color);
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 3px;
+            @include bg-color(#379aff)
+        }
+    }
+}
+.actions-bar {
+    border-bottom: solid 1px #9797971b;
+    gap: 10px;
+    &__item{
+        width: 45px;
+        height: 45px;
+        border: solid 1px $text-light-color;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.message-header {
+    padding: 17px 0;
+    margin: 0 30px;
+    border-bottom: solid 1px #9797971b;
+
+    .message-subject {
+        margin-bottom: 20px;
+    }
+}
+.sender-profile {
+    gap: 10px;
+    &__image {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    &__name {
+        font-size: 18px;
+    }
+    a {
+        color: $text-dark-color;
+    }
+}
+.message-content {
+    line-height: 1.71;
+    padding: 30px 0;
+    margin: 0 30px;
+    border-bottom: solid 1px #9797971b;
+}
+.attachment-container {
+    padding: 20px 30px;
+}
+
+.attachment{
+    width: 120px;
+    height: 45px;
+    padding: 7px;
+    border-radius: 4px;
+    border: solid 1px rgba($text-light-color, 0.2);
+    gap: 5px;
+
+    &__image {
+        flex-shrink: 0;
+        min-width: 25px;
+        height: 30px;
+    }
+    &__name {
+        align-self: end;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.message-actions {
+    gap: 15px;
+}
+.reply-icon,
+.forward-icon
+ {
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+    object-fit: contain;
+}

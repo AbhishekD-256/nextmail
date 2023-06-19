@@ -1,0 +1,80 @@
+%control-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+.tab-close {
+    @extend %control-btn;
+    @include bg-color(#e43c2f);
+}
+.tab-minimize {
+    @extend %control-btn;
+    @include bg-color(#ffc107)
+}
+.tab-resize {
+    @extend %control-btn;
+    @include bg-color(#15cc35);
+}
+
+.flex {
+    display: flex;
+
+    &-space,
+    &-center {
+        display: flex;
+        align-items: center;
+    }
+    &-center {
+        justify-content: center;
+    }
+    &-space {
+        justify-content: space-between;
+    }
+    &-col {
+        flex-direction: column;
+    }
+}
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.pd-l-b {
+    padding: 0 0 10px 15px;
+}
+.pd-md {
+    padding: 30px;
+}
+
+$ring-variants: violet, yellow, orange, blue;
+.ring {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    @each $variant in $ring-variants {
+        &--#{$variant} {
+            border: 2px solid $variant;
+        }
+    }
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+$fonts: (lg:24px, md: 15px, sm: 12px, xsm: 10px);
+    @each $font, $size in $fonts {
+        .text-#{$font} {
+            font-size: $size;
+        }
+    }
+
+.fw-600 {
+    font-weight: 600;
+}
