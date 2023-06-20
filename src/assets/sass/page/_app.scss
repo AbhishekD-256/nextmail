@@ -77,7 +77,7 @@ body {
 .mail-list {
     @include bg-color(#f9f9f9);
     min-width: 336px;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     &__header {
         .search-bar {
@@ -154,6 +154,10 @@ body {
         }
     }
 }
+
+.mail-view {
+    overflow-y: auto;
+}
 .actions-bar {
     border-bottom: solid 1px #9797971b;
     gap: 8px;
@@ -168,7 +172,6 @@ body {
 
 .message-header {
     padding: 16px 0;
-    margin: 0 30px;
     border-bottom: solid 1px #9797971b;
 
     .message-subject {
@@ -192,11 +195,10 @@ body {
 .message-content {
     line-height: 1.71;
     padding: 28px 0;
-    margin: 0 28px;
     border-bottom: solid 1px #9797971b;
 }
 .attachment-container {
-    padding: 20px 28px;
+    padding: 20px 0;
 }
 
 .attachment{
