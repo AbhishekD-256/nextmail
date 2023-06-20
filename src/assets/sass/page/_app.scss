@@ -74,7 +74,7 @@ body {
     }
 }
 
-.mail-repo {
+.mail-list {
     @include bg-color(#f9f9f9);
     min-width: 336px;
     overflow-y: scroll;
@@ -105,7 +105,7 @@ body {
     }
 }   
 
-.repo-item {
+.list-item {
     position: relative;
     padding: 20px 28px;
     border-bottom: 1px solid #ededed;
@@ -125,11 +125,8 @@ body {
             white-space: nowrap;
         }
     }
-    &__sender {
-        font-weight: 600;
-    }
     &.unread {
-        .repo-item__subject {
+        .list-item__subject {
             &::before {
                 content: '';
                 position: absolute;
