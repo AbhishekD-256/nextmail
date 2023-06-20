@@ -21,19 +21,19 @@
 }
 
 .pd-l-b {
-    padding: 0 0 10px 15px;
+    padding: 0 0 8px 16px;
 }
 .pd-md {
-    padding: 30px;
+    padding: 28px;
 }
 
 $ring-variants: violet, yellow, orange, blue;
 .ring {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 16px;
 
     @each $variant in $ring-variants {
         &--#{$variant} {
