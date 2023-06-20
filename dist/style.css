@@ -76,6 +76,10 @@ a {
   padding: 28px;
 }
 
+.scroll-y {
+  overflow-y: auto;
+}
+
 .image-fit {
   width: 100%;
   height: 100%;
@@ -205,7 +209,6 @@ body {
 .mail-list {
   background-color: #f9f9f9;
   min-width: 336px;
-  overflow-y: scroll;
 }
 .mail-list__header .search-bar {
   background-color: #ffffff;
@@ -270,10 +273,6 @@ body {
   height: 100%;
   width: 3px;
   background-color: #379aff;
-}
-
-.mail-view {
-  overflow-y: auto;
 }
 
 .actions-bar {
