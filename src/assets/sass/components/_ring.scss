@@ -1,0 +1,14 @@
+$ring-variants: ("violet": #9200ff, "yellow": #d0db00, "orange": #ff7100, "blue": #00dcff);
+.ring {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 16px;
+
+    @each $name, $variant in $ring-variants {
+        &--#{$name} {
+            border: 2px solid $variant;
+        }
+    }
+}
