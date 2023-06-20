@@ -119,6 +119,17 @@ a {
   color: rgba(101, 103, 110, 0.8);
 }
 
+.header {
+  background-color: #33495f;
+  height: 44px;
+}
+.header__img {
+  max-width: 100px;
+}
+.header__img img {
+  width: 100%;
+}
+
 body {
   background-color: #ffffff;
   height: 100vh;

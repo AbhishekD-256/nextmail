@@ -7,25 +7,6 @@ body {
     color: $text-light-color;
     overflow: hidden;
 }
-.header {
-    @include bg-color(#33495f);
-    position: relative;
-    height: 45px;
-
-    .tab-control {
-        position: absolute;
-        top:50%;
-        left: 20px;
-        transform: translateY(-50%);
-    }
-
-    &__img {
-        max-width: 100px;
-        img {
-            width: 100%;
-        }
-    }
-}
 
 .compose-img,
 .nav-icon,
