@@ -27,25 +27,6 @@ a {
   text-decoration: none;
 }
 
-.tab-resize, .tab-minimize, .tab-close {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 10px 0 0;
-}
-
-.tab-close {
-  background-color: #e43c2f;
-}
-
-.tab-minimize {
-  background-color: #ffc107;
-}
-
-.tab-resize {
-  background-color: #15cc35;
-}
-
 .flex {
   display: flex;
 }

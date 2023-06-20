@@ -1,22 +1,3 @@
-%control-btn {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 10px 0 0;
-}
-.tab-close {
-    @extend %control-btn;
-    @include bg-color(#e43c2f);
-}
-.tab-minimize {
-    @extend %control-btn;
-    @include bg-color(#ffc107)
-}
-.tab-resize {
-    @extend %control-btn;
-    @include bg-color(#15cc35);
-}
-
 .flex {
     display: flex;
 
