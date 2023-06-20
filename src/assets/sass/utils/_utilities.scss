@@ -69,11 +69,11 @@ $ring-variants: violet, yellow, orange, blue;
 
 
 $fonts: (lg:24px, md: 15px, sm: 12px, xsm: 10px);
-    @each $font, $size in $fonts {
-        .text-#{$font} {
-            font-size: $size;
-        }
+@each $font, $size in $fonts {
+    .text-#{$font} {
+        font-size: $size;
     }
+}
 
 .fw-600 {
     font-weight: 600;
