@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>nextmail</title>
 </head>
 
@@ -15,7 +15,7 @@
 
     <header class="header  flex-center">
         <figure class="header__img">
-            <img src="assets/images/log.png" alt="nextmail logo">
+            <img src="src/assets/images/log.png" alt="nextmail logo">
         </figure>
     </header>
 
@@ -24,38 +24,38 @@
         <aside class="navigation-container  flex  flex-col  flex-jc-sb">
             <div class="navigation  flex  flex-col">
                 <button class="compose-btn btn  btn--primary  flex-center">
-                    <img class="compose-img" src="assets/images/edit.png" alt="compose">
+                    <img class="compose-img" src="src/assets/images/edit.png" alt="compose">
                     Compose
                 </button>
                 <ul class="flex  flex-col">
                     <h3 class="navigation__heading  pd-l-b">MAILBOX</h3>
                     <li class="navigation__item  flex  active">
-                        <img class="nav-icon" src="assets/images/inbox.svg" alt="inbox">
+                        <img class="nav-icon" src="src/assets/images/inbox.svg" alt="inbox">
                         <span>Inbox</span>
                         <span>(200)</span>
                     </li>
                     <li class="navigation__item  flex">
-                        <img class="nav-icon" src="assets/images/sent.svg" alt="sent">
+                        <img class="nav-icon" src="src/assets/images/sent.svg" alt="sent">
                         <span>Sent Mail</span>
                         <span></span>
                     </li>
                     <li class="navigation__item  flex">
-                        <img class="nav-icon" src="assets/images/draft.svg" alt="draft">
+                        <img class="nav-icon" src="src/assets/images/draft.svg" alt="draft">
                         <span>Drafts</span>
                         <span></span>
                     </li>
                     <li class="navigation__item  flex">
-                        <img class="nav-icon" src="assets/images/trash.svg" alt="trash">
+                        <img class="nav-icon" src="src/assets/images/trash.svg" alt="trash">
                         <span>Trash</span>
                         <span>(2)</span>
                     </li>
                     <li class="navigation__item  flex">
-                        <img class="nav-icon" src="assets/images/attachments.svg" alt="attachments">
+                        <img class="nav-icon" src="src/assets/images/attachments.svg" alt="attachments">
                         <span>Attachments</span>
                         <span></span>
                     </li>
                     <li class="navigation__item  flex">
-                        <img class="nav-icon" src="assets/images/more.svg" alt="more">
+                        <img class="nav-icon" src="src/assets/images/more.svg" alt="more">
                         <span>More…</span>
                         <span></span>
                     </li>
@@ -91,7 +91,7 @@
 
             <div class="email-profile  flex">
                 <figure class="email-profile__image">
-                    <img class="image-fit" src="assets/images/profile.png" alt="profile">
+                    <img class="image-fit" src="src/assets/images/profile.png" alt="profile">
                 </figure>
                 <div class="flex  flex-col">
                     <span class="email-profile__name">Christian Bale</span>
@@ -103,7 +103,7 @@
         <div class="mail-list  scroll-y">
             <div class="mail-list__header  pd-md">
                 <div class="search-bar  flex">
-                    <img class="search-bar__icon" src="assets/images/search.svg" alt="search">
+                    <img class="search-bar__icon" src="src/assets/images/search.svg" alt="search">
                     <input type="text" placeholder="Search">
                 </div>
                 <div class="filter-container  flex-space">
@@ -112,7 +112,7 @@
                         <span>sort by:</span>
                         <div>
                             <span>Unread</span>
-                            <img src="assets/images/down-copy.svg" alt="down symbol">
+                            <img src="src/assets/images/down-copy.svg" alt="down symbol">
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                     <div class="flex  flex-jc-sb">
                         <div class="sender-profile  flex">
                             <figure class="sender-profile__image">
-                                <img class="image-fit" src="assets/images/profile.png" alt="profile">
+                                <img class="image-fit" src="src/assets/images/profile.png" alt="profile">
                             </figure>
 
                             <div class="flex flex-col">
@@ -272,23 +272,22 @@
                 <ul class="attachment-container">
                     <li class="attachment flex">
                         <figure class="attachment__image">
-                            <img class="image-fit" src="assets/images/pdf.svg" alt="pdf image">
+                            <img class="image-fit" src="src/assets/images/pdf.svg" alt="pdf image">
                         </figure>
                         <span class="attachment__name  text-sm">Sample-edited-pdf.pdf</span>
                     </li>
                 </ul>
             </div>
             <div class="message-actions  flex  pd-md">
-                <button class="btn  btn--primary  flex-center"><img class="reply-icon" src="assets/images/reply.png"
+                <button class="btn  btn--primary  flex-center"><img class="reply-icon" src="src/assets/images/reply.png"
                         alt="reply"> Reply</button>
                 <button class="btn  btn--secondary  flex-center"><img class="forward-icon"
-                        src="assets/images/forward.png" alt="forward">
+                        src="src/assets/images/forward.png" alt="forward">
                     Forward</button>
             </div>
         </section>
-
     </main>
-    <script src="../dist/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

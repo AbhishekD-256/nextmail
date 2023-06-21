@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: "./src/assets/scripts/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     filename: "main.js",
   },
   devServer: {
@@ -16,15 +16,14 @@ module.exports = {
     port: 3000,
     open: true,
   },
-  //   plugins: [
-  //     new HtmlWebpackPlugin({
-  //       filename: "index.html",
-  //       template: "./src/template.html",
-  //     }),
-  //   ],
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: "style.css",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "./index.html",
     }),
   ],
   module: {
