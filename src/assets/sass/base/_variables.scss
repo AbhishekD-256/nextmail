@@ -3,3 +3,7 @@ $text-dark-color: #4c4f59;
 $text-light-color: #65676e;
 
 $base-font-size: 14px; 
+
+@function light-border($opacity) {
+    @return 1px solid rgba($text-light-color, $opacity)
+}

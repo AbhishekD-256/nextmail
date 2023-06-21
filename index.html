@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>nextmail</title>
 </head>
 
@@ -15,7 +14,7 @@
 
     <header class="header  flex-center">
         <figure class="header__img">
-            <img src="../src/assets/images/log.png" alt="nextmail logo">
+            <img src="images/log.png" alt="nextmail logo">
         </figure>
     </header>
 
@@ -24,59 +23,59 @@
         <aside class="navigation-container  flex  flex-col  flex-jc-sb">
             <div class="navigation  flex  flex-col">
                 <button class="compose-btn btn  btn--primary  flex-center">
-                    <img class="compose-img" src="../src/assets/images/edit.png" alt="compose">
+                    <img class="compose-img" src="images/edit.png" alt="compose">
                     Compose
                 </button>
                 <ul class="flex  flex-col">
-                    <h3 class="navigation__heading  pd-l-b">MAILBOX</h3>
+                    <h3 class="navigation__heading">MAILBOX</h3>
                     <li class="navigation__item  flex  active">
-                        <svg class="icon" width="15" height="15">
-                            <use xlink:href="images/sprite.svg#inbox"></use>
+                        <svg class="nav-icon">
+                            <use href="images/sprite.svg#inbox"></use>
                         </svg>
                         <span>Inbox</span>
                         <span>(200)</span>
                     </li>
                     <li class="navigation__item  flex">
-                        <svg class="icon" width="15" height="15">
-                            <use xlink:href="images/sprite.svg#sent"></use>
+                        <svg class="nav-icon">
+                            <use href="images/sprite.svg#sent"></use>
                         </svg>
                         <span>Sent Mail</span>
                     </li>
                     <li class="navigation__item  flex">
-                        <svg class="icon" width="15" height="15">
-                            <use xlink:href="images/sprite.svg#draft"></use>
+                        <svg class="nav-icon">
+                            <use href="images/sprite.svg#draft"></use>
                         </svg>
                         <span>Drafts</span>
                         <span></span>
                     </li>
                     <li class="navigation__item  flex">
-                        <svg class="icon" width="15" height="15">
-                            <use xlink:href="images/sprite.svg#trash"></use>
+                        <svg class="nav-icon">
+                            <use href="images/sprite.svg#trash"></use>
                         </svg>
                         <span>Trash</span>
                         <span>(2)</span>
                     </li>
                     <li class="navigation__item  flex">
-                        <svg class="icon" width="15" height="15">
-                            <use xlink:href="images/sprite.svg#attachments"></use>
+                        <svg class="nav-icon">
+                            <use href="images/sprite.svg#attachments"></use>
                         </svg>
                         <span>Attachments</span>
                         <span></span>
                     </li>
                     <li class="navigation__item  flex">
-                        <svg class="icon" width="15" height="15">
-                            <use xlink:href="images/sprite.svg#more"></use>
+                        <svg class="nav-icon">
+                            <use href="images/sprite.svg#more"></use>
                         </svg>
                         <span>More…</span>
                         <span></span>
                     </li>
                 </ul>
                 <ul class="lists  flex flex-col">
-                    <h3 class="navigation__heading  pd-l-b">LISTS</h3>
+                    <h3 class="navigation__heading">LISTS</h3>
                     <li class="navigation__item">linkedin</li>
                 </ul>
                 <ul class="lables  flex  flex-col">
-                    <h3 class="navigation__heading  pd-l-b">LABELS</h3>
+                    <h3 class="navigation__heading">LABELS</h3>
                     <li class="navigation__item  flex">
                         <span class="ring  ring--violet"></span>
                         <span>Personal</span>
@@ -102,10 +101,10 @@
 
             <div class="email-profile  flex">
                 <figure class="email-profile__image">
-                    <img class="image-fit" src="../src/assets/images/profile.png" alt="profile">
+                    <img class="image-fit" src="images/profile.png" alt="profile">
                 </figure>
                 <div class="flex  flex-col">
-                    <span class="email-profile__name">Christian Bale</span>
+                    <span class="email-profile__name  fw-600">Christian Bale</span>
                     <span class="text-xsm">christian.bale@gmaiil.com</span>
                 </div>
             </div>
@@ -114,8 +113,8 @@
         <div class="mail-list  scroll-y">
             <div class="mail-list__header  pd-md">
                 <div class="search-bar  flex">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#search"></use>
+                    <svg class="search-bar__icon">
+                        <use href="images/sprite.svg#search"></use>
                     </svg>
                     <input type="text" placeholder="Search">
                 </div>
@@ -123,10 +122,10 @@
                     <span class="text-lg">Inbox</span>
                     <div class="flex">
                         <span>sort by:</span>
-                        <div>
+                        <div class="filter-menu">
                             <span>Unread</span>
-                            <svg class="icon" width="23" height="15">
-                                <use xlink:href="images/sprite.svg#down-copy"></use>
+                            <svg width="10" height="8">
+                                <use href="images/sprite.svg#down-copy"></use>
                             </svg>
                         </div>
                     </div>
@@ -135,57 +134,57 @@
             <ul>
                 <li class="list-item  flex  unread  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Design Language</span></div>
-                        <span class="text-sm  fw-600">Salman Shah</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Design Language</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
                     <div class="text-sm">08:00 PM</div>
                 </li>
                 <li class="list-item  flex  active  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Nextmail New Look</span></div>
-                        <span class="text-sm  fw-600">Salman Shah</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Nextmail New Look</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
                     <div class="text-sm">11:00 AM</div>
                 </li>
                 <li class="list-item  flex  unread   flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Interview with Shopify</span></div>
-                        <span class="text-sm  fw-600">Aisha Dialo</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Interview with Shopify</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Aisha Dialo</span>
                     </div>
                     <div class="text-sm">12:05 PM</div>
                 </li>
                 <li class="list-item  flex  unread  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Narcos Season 2</span></div>
-                        <span class="text-sm  fw-600">Netflix</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Narcos Season 2</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Netflix</span>
                     </div>
                     <div class="text-sm">07:35 PM</div>
                 </li>
                 <li class="list-item  flex  unread  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Top Stories of the Day</span></div>
-                        <span class="text-sm  fw-600">TechCrunch</span>
+                        <div class="list-item__subject"><span class="text-ellipsis"> Top Stories of the Day</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">TechCrunch</span>
                     </div>
                     <div class="text-sm">Yesterday</div>
                 </li>
                 <li class="list-item  flex  unread  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Updates from Kevin</span></div>
-                        <span class="text-sm  fw-600">Goodreads</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Updates from Kevin</span></div>
+                        <span class=" list-item__sender  text-sm  fw-600  text-ellipsis">Goodreads</span>
                     </div>
                     <div class="text-sm">Yesterday</div>
                 </li>
                 <li class="list-item  flex  unread  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Startup 2016</span></div>
-                        <span class="text-sm  fw-600">Salman Shah</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Startup 2016</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
                     <div class="text-sm">09 Oct, 16</div>
                 </li>
                 <li class="list-item  flex  unread  flex-jc-sb">
                     <div class="flex flex-col">
-                        <div class="list-item__subject"><span>Startup 2016</span></div>
-                        <span class="text-sm  fw-600">Salman Shah</span>
+                        <div class="list-item__subject"><span class="text-ellipsis">Startup 2016</span></div>
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
                     <div class="text-sm">09 Oct, 16</div>
                 </li>
@@ -196,33 +195,33 @@
 
             <ul class="actions-bar  flex  pd-md">
                 <li class="actions-bar__item  flex-center">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#read"></use>
+                    <svg class="actions-bar__icon">
+                        <use href="images/sprite.svg#read"></use>
                     </svg>
                 </li>
                 <li class="actions-bar__item  flex-center">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#exit"></use>
+                    <svg class="actions-bar__icon">
+                        <use href="images/sprite.svg#exit"></use>
                     </svg>
                 </li>
                 <li class="actions-bar__item  flex-center">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#snooze"></use>
+                    <svg class="actions-bar__icon">
+                        <use href="images/sprite.svg#snooze"></use>
                     </svg>
                 </li>
                 <li class="actions-bar__item  flex-center">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#options"></use>
+                    <svg class="actions-bar__icon">
+                        <use href="images/sprite.svg#options"></use>
                     </svg>
                 </li>
                 <li class="actions-bar__item  flex-center">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#attachments"></use>
+                    <svg class="actions-bar__icon">
+                        <use href="images/sprite.svg#attachments"></use>
                     </svg>
                 </li>
                 <li class="actions-bar__item  flex-center">
-                    <svg class="icon" width="23" height="15">
-                        <use xlink:href="images/sprite.svg#trash"></use>
+                    <svg class="actions-bar__icon">
+                        <use href="images/sprite.svg#trash"></use>
                     </svg>
                 </li>
             </ul>
@@ -233,7 +232,7 @@
                     <div class="flex  flex-jc-sb">
                         <div class="sender-profile  flex">
                             <figure class="sender-profile__image">
-                                <img class="image-fit" src="../src/assets/images/profile.png" alt="profile">
+                                <img class="image-fit" src="images/profile.png" alt="profile">
                             </figure>
 
                             <div class="flex flex-col">
@@ -262,25 +261,24 @@
                 </div>
                 <ul class="attachment-container">
                     <li class="attachment flex">
-                        <svg class="attachment__image" height="28" width="28">
-                            <use xlink:href="images/sprite.svg#pdf"></use>
+                        <svg class="attachment__image">
+                            <use href="images/sprite.svg#pdf"></use>
                         </svg>
 
-                        <span class="attachment__name  text-sm">Sample-edited-pdf.pdf</span>
+                        <span class="attachment__name  text-sm  text-ellipsis">Sample-edited-pdf.pdf</span>
                     </li>
                 </ul>
             </div>
             <div class="message-actions  flex  pd-md">
-                <button class="btn  btn--primary  flex-center"><img class="reply-icon"
-                        src="../src/assets/images/reply.png" alt="reply"> Reply</button>
+                <button class="btn  btn--primary  flex-center"><img class="reply-icon" src="images/reply.png"
+                        alt="reply"> Reply</button>
                 <button class="btn  btn--secondary  flex-center">
-                    <img class="forward-icon" src="../src/assets/images/forward.png" alt="forward">
+                    <img class="forward-icon" src="images/forward.png" alt="forward">
                     Forward
                 </button>
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
 </body>
 
 </html>

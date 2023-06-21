@@ -68,10 +68,6 @@ a {
   justify-content: space-between;
 }
 
-.pd-l-b {
-  padding: 0 0 8px 16px;
-}
-
 .pd-md {
   padding: 28px;
 }
@@ -84,6 +80,12 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .btn {
@@ -129,6 +131,7 @@ a {
 }
 .header__img {
   max-width: 100px;
+  line-height: 0;
 }
 .header__img img {
   width: 100%;
@@ -145,7 +148,9 @@ body {
 
 .compose-img,
 .nav-icon,
-.search-bar__icon {
+.search-bar__icon,
+.reply-icon,
+.forward-icon {
   width: 16px;
   height: 16px;
   object-fit: contain;
@@ -170,9 +175,11 @@ body {
   margin-left: 16px;
 }
 .navigation__heading {
+  padding: 0 0 8px 16px;
   margin-top: 20px;
   font-size: 15px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 .navigation__item {
   padding: 8px 0 8px 16px;
@@ -200,7 +207,6 @@ body {
   border-radius: 50%;
 }
 .email-profile__name {
-  font-weight: 600;
   color: #4c4f59;
 }
 
@@ -236,6 +242,10 @@ body {
   border-bottom: 1px solid #ededed;
   cursor: pointer;
 }
+.list-item__sender {
+  display: inline-block;
+  max-width: 150px;
+}
 .list-item__subject {
   font-size: 15px;
   font-weight: bold;
@@ -243,11 +253,8 @@ body {
   position: relative;
 }
 .list-item__subject span {
-  max-width: 200px;
   display: inline-block;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  max-width: 200px;
 }
 .list-item.unread .list-item__subject::before {
   content: "";
@@ -274,8 +281,12 @@ body {
 }
 
 .actions-bar {
-  border-bottom: solid 1px rgba(101, 103, 110, 0.2);
+  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
   gap: 8px;
+}
+.actions-bar__icon {
+  width: 22px;
+  height: 16px;
 }
 .actions-bar__item {
   width: 44px;
@@ -287,7 +298,7 @@ body {
 
 .message-header {
   padding: 16px 0;
-  border-bottom: solid 1px rgba(101, 103, 110, 0.2);
+  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
 }
 .message-header .message-subject {
   margin-bottom: 20px;
@@ -311,7 +322,7 @@ body {
 .message-content {
   line-height: 1.71;
   padding: 28px 0;
-  border-bottom: solid 1px rgba(101, 103, 110, 0.2);
+  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
 }
 
 .attachment-container {
@@ -323,29 +334,17 @@ body {
   height: 45px;
   padding: 7px;
   border-radius: 4px;
-  border: solid 1px rgba(101, 103, 110, 0.2);
+  border: 1px solid rgba(101, 103, 110, 0.1);
   gap: 5px;
 }
 .attachment__image {
-  flex-shrink: 0;
-  min-width: 24px;
+  width: 24px;
   height: 32px;
 }
 .attachment__name {
   align-self: end;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .message-actions {
   gap: 16px;
-}
-
-.reply-icon,
-.forward-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 4px;
-  object-fit: contain;
 }
