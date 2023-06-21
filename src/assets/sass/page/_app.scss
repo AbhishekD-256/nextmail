@@ -34,6 +34,9 @@ body {
 
     .compose-btn {
         margin-left: 16px;
+        &:hover {
+            @include bg-color(#00985b);
+        }
     }
 
     &__heading {
@@ -57,6 +60,9 @@ body {
             color: $text-dark-color;
             font-weight: bold;
         }
+        &:hover {
+            @include bg-color(#e5e6e5)
+         }
     }
 }
 .email-profile {
@@ -109,6 +115,10 @@ body {
     padding: 20px 28px;
     border-bottom: 1px solid #ededed;
     cursor: pointer;
+
+    &:hover {
+        @include bg-color($primary-color);
+    }
 
     &__sender {
         display: inline-block;
@@ -209,6 +219,7 @@ body {
     border-radius: 4px;
     border: light-border(0.1);
     gap: 5px;
+    color: $text-light-color;
 
     &__image {
         width: 24px;
@@ -221,4 +232,8 @@ body {
 
 .message-actions {
     gap: 16px;
+
+    .reply-icon {
+        transform: scaleX(-1);
+    }
 }

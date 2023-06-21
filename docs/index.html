@@ -20,7 +20,7 @@
 
     <main class="app  flex">
 
-        <aside class="navigation-container  flex  flex-col  flex-jc-sb">
+        <aside class="navigation-container  flex  flex-col  flex-jc-sb  scroll-y">
             <div class="navigation  flex  flex-col">
                 <button class="compose-btn btn  btn--primary  flex-center">
                     <img class="compose-img" src="images/edit.png" alt="compose">
@@ -259,18 +259,18 @@
                         DesignAvenger
                     </p>
                 </div>
-                <ul class="attachment-container">
-                    <li class="attachment flex">
+                <div class="attachment-container">
+                    <a href="javascript:void(0)" class="attachment flex">
                         <svg class="attachment__image">
                             <use href="images/sprite.svg#pdf"></use>
                         </svg>
 
                         <span class="attachment__name  text-sm  text-ellipsis">Sample-edited-pdf.pdf</span>
-                    </li>
-                </ul>
+                    </a>
+                </div>
             </div>
             <div class="message-actions  flex  pd-md">
-                <button class="btn  btn--primary  flex-center"><img class="reply-icon" src="images/reply.png"
+                <button class="btn  btn--secondary  flex-center"><img class="reply-icon" src="images/forward.png"
                         alt="reply"> Reply</button>
                 <button class="btn  btn--secondary  flex-center">
                     <img class="forward-icon" src="images/forward.png" alt="forward">
