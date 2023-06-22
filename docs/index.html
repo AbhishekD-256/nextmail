@@ -25,7 +25,7 @@
                     Compose
                 </button>
                 <h3 class="navigation__heading  text-md">MAILBOX</h3>
-                <ul class="navigation  flex-col">
+                <ul class="navigation  flex-col  border-b">
                     <li class="navigation__item  flex  flex-ai-c   fw-600  active">
                         <svg class="nav-icon">
                             <use href="images/sprite.svg#inbox"></use>
@@ -65,11 +65,16 @@
                             <use href="images/sprite.svg#more"></use>
                         </svg>
                         <span>More…</span>
-                        <span></span>
                     </li>
+                    <ul class="more-nav">
+                        <li class="navigation__item">Important</li>
+                        <li class="navigation__item">Scheduled</li>
+                        <li class="navigation__item">Spam</li>
+                        <li class="navigation__item">All mails</li>
+                    </ul>
                 </ul>
                 <h3 class="navigation__heading  text-md">LISTS</h3>
-                <ul class="navigation  flex-col">
+                <ul class="navigation  flex-col  border-b">
                     <li class="navigation__item">linkedin</li>
                 </ul>
                 <h3 class="navigation__heading  text-md">LABELS</h3>
@@ -98,7 +103,7 @@
             </div>
 
             <div class="email-profile  flex  flex-ai-c">
-                <figure class="email-profile__image">
+                <figure class="email-profile__image  rad-50">
                     <img class="image-fit" src="images/profile.png" alt="profile">
                 </figure>
                 <div class="flex-col">
@@ -125,6 +130,13 @@
                             <svg width="10" height="8">
                                 <use href="images/sprite.svg#down-copy"></use>
                             </svg>
+                            <ul class="drop-down">
+                                <li class="drop-down__link">Read</li>
+                                <li class="drop-down__link">Starred</li>
+                                <li class="drop-down__link">Unstarred</li>
+                                <li class="drop-down__link">All</li>
+                                <li class="drop-down__link">None</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -227,33 +239,33 @@
 
         <section class="mail-view  scroll-y">
 
-            <ul class="actions-bar  flex  pd-md">
-                <li class="actions-bar__item  flex-center">
+            <ul class="actions-bar  flex  pd-md  border-b">
+                <li class="actions-bar__item  flex-center  rad-50">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#read"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center">
+                <li class="actions-bar__item  flex-center  rad-50">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#exit"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center">
+                <li class="actions-bar__item  flex-center  rad-50">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#snooze"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center">
+                <li class="actions-bar__item  flex-center  rad-50">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#options"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center">
+                <li class="actions-bar__item  flex-center  rad-50">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#catagorize"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center">
+                <li class="actions-bar__item  flex-center  rad-50">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#trash"></use>
                     </svg>
@@ -261,11 +273,11 @@
             </ul>
 
             <div class="mail-view-box  pd-md">
-                <div class="message-header">
+                <div class="message-header  border-b">
                     <div class="message-subject  text-lg">Nextmail New Look</div>
                     <div class="flex  flex-jc-sb">
                         <div class="sender-profile  flex">
-                            <figure class="sender-profile__image">
+                            <figure class="sender-profile__image  rad-50">
                                 <img class="image-fit" src="images/profile.png" alt="profile">
                             </figure>
 
@@ -278,7 +290,7 @@
                         <span>11:00 AM, Today</span>
                     </div>
                 </div>
-                <div class="message-content">
+                <div class="message-content  border-b">
                     <p>Hello Ben Affleck,</p>
 
                     <p>

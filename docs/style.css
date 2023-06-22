@@ -94,6 +94,18 @@ span {
   white-space: nowrap;
 }
 
+.border-b {
+  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
+}
+
+.rad-50 {
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+
 .btn {
   border-radius: 100px;
   width: 125px;
@@ -167,9 +179,6 @@ span {
   padding: 28px 20px 0 28px;
 }
 
-.navigation + .navigation {
-  border-top: 1px solid rgba(101, 103, 110, 0.2);
-}
 .navigation .compose-btn:hover {
   background-color: #00985b;
 }
@@ -201,7 +210,6 @@ span {
 .email-profile__image {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
 }
 .email-profile__name {
   color: #4c4f59;
@@ -260,6 +268,7 @@ body {
 }
 .mail-list__header .filter-container {
   padding-top: 28px;
+  position: relative;
 }
 
 .list-item {
@@ -269,7 +278,6 @@ body {
   cursor: pointer;
 }
 .list-item:hover {
-  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
   background-color: #ffffff;
 }
 .list-item.unread .list-item__subject::before {
@@ -307,7 +315,6 @@ body {
 }
 
 .actions-bar {
-  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
   gap: 8px;
 }
 .actions-bar__icon {
@@ -318,7 +325,6 @@ body {
   width: 44px;
   height: 44px;
   border: solid 1px #65676e;
-  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -328,7 +334,6 @@ body {
 
 .message-header {
   padding: 16px 0;
-  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
 }
 .message-header .message-subject {
   margin-bottom: 20px;
@@ -340,7 +345,6 @@ body {
 .sender-profile__image {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
 }
 .sender-profile__name {
   font-size: 18px;
@@ -352,7 +356,6 @@ body {
 .message-content {
   line-height: 1.71;
   padding: 28px 0;
-  border-bottom: 1px solid rgba(101, 103, 110, 0.1);
 }
 
 .attachment-container {
@@ -361,4 +364,17 @@ body {
 
 .message-actions {
   gap: 16px;
+}
+
+.drop-down {
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 0 #8f929d;
+  border-radius: 12px;
+  z-index: 10;
+  padding: 8px;
+  right: 0;
+}
+.drop-down__link {
+  padding: 4px 0;
 }
