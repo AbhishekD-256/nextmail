@@ -1,0 +1,51 @@
+.side-bar {
+    width: 200px;
+}
+.navigation-container {
+    padding: 28px 20px 0 28px;
+}
+.navigation {
+    &+& {
+        border-top: light-border(0.2);
+    }
+    .compose-btn {
+        &:hover {
+            @include bg-color(#00985b);
+        }
+    }
+
+    &__heading {
+        padding: 20px 0 8px 0;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        padding: 8px 0;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 12px;
+        }
+        &.active {
+            color: $text-dark-color;
+            font-weight: bold;
+        }
+        &:hover {
+            @include bg-color(#e5e6e5)
+         }
+    }
+}
+.email-profile {
+    gap: 5px;
+    padding: 12px 16px;
+    border-top: light-border(0.2);
+    &__image  {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    &__name {
+        color: $text-dark-color;
+    }
+}

@@ -18,7 +18,7 @@
 
     <main class="app  flex">
 
-        <aside class="side-bar  flex-col  flex-jc-sb  scroll-y">
+        <aside class="side-bar  flex-col  flex-jc-sb  no-shrink  scroll-y">
             <div class="navigation-container  flex-col">
                 <button class="compose-btn  btn  btn--primary  flex-center">
                     <img class="compose-img" src="images/edit.png" alt="compose">
@@ -108,7 +108,7 @@
             </div>
         </aside>
 
-        <div class="mail-list  scroll-y">
+        <div class="mail-list  scroll-y  no-shrink">
             <div class="mail-list__header  pd-md">
                 <div class="search-bar  flex">
                     <svg class="search-bar__icon">
@@ -265,7 +265,7 @@
                 </div>
                 <div class="attachment-container">
                     <a href="javascript:void(0)" class="attachment flex">
-                        <svg class="attachment__image">
+                        <svg class="attachment__image   no-shrink">
                             <use href="images/sprite.svg#pdf"></use>
                         </svg>
 

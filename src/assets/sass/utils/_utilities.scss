@@ -32,6 +32,9 @@
 .flex-ai-c {
     @extend %align-items-center;
 }
+.no-shrink {
+    flex-shrink: 0;
+}
 
 .pd-md {
     padding: 28px;
