@@ -7,6 +7,9 @@
         @include bg-color(#00b96e);
         box-shadow: 0 0 15px 0 rgba(7, 156, 95, 0.3);
         color: $primary-color;
+        &:hover {
+            @include bg-color(#038e56);
+        }
     }
     &--secondary {
         @include bg-color(transparent);

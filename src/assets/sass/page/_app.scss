@@ -148,27 +148,6 @@ body {
 .attachment-container {
     padding: 20px 0;
 }
-
-.attachment{
-    @include size(120px, 44px);
-    padding: 8px;
-    border-radius: 4px;
-    border: light-border(0.1);
-    gap: 5px;
-    color: $text-light-color;
-
-    &__image {
-        @include size(24px, 32px);
-    }
-    &__name {
-        align-self: end;
-    }
-}
-
 .message-actions {
     gap: 16px;
-
-    .reply-icon {
-        transform: scaleX(-1);
-    }
 }
