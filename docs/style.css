@@ -272,11 +272,6 @@ body {
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
   background-color: #ffffff;
 }
-.list-item .list-item.active::before, .list-item.unread .list-item__subject::before {
-  content: "";
-  position: absolute;
-  background-color: #379aff;
-}
 .list-item.unread .list-item__subject::before {
   content: "";
   position: absolute;

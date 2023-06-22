@@ -66,15 +66,9 @@ body {
         @include bg-color($primary-color);
     }
 
-    %before {
-        content: '';
-        position: absolute;
-        @include bg-color(#379aff);
-    }
     &.unread {
         .list-item__subject {
             &::before {
-                @extend %before;
                 @include position-before-el(8px, -16px, 8px, 8px);
                 border-radius: 50%;
             }
@@ -84,15 +78,7 @@ body {
     &.active {
         @include bg-color($primary-color);
         &::before {
-            @extend %before;
             @include position-before-el(0, 0, 3px, 100%);
-            // content: '';
-            // position: absolute;
-            // @include bg-color(#379aff);
-            // top: 0;
-            // left: 0;
-            // width: 3px;
-            // height: 100%;
         }
     }
 
