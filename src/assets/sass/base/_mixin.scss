@@ -3,10 +3,14 @@
 }
 
 @mixin position-before-el($top, $left, $width, $height){
+    content: '';
+    position: absolute;
     top: $top;
     left: $left;
     width: $width;
     height: $height;
+    @include bg-color(#379aff);
+
 }
 
 @mixin size($width, $height) {

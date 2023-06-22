@@ -18,14 +18,14 @@
 
     <main class="app  flex">
 
-        <aside class="side-bar  flex-col  flex-jc-sb  scroll-y">
+        <aside class="side-bar  flex-col  flex-jc-sb  no-shrink  scroll-y">
             <div class="navigation-container  flex-col">
                 <button class="compose-btn  btn  btn--primary  flex-center">
                     <img class="compose-img" src="images/edit.png" alt="compose">
                     Compose
                 </button>
+                <h3 class="navigation__heading  text-md">MAILBOX</h3>
                 <ul class="navigation  flex-col">
-                    <h3 class="navigation__heading  text-md">MAILBOX</h3>
                     <li class="navigation__item  flex  flex-ai-c   fw-600  active">
                         <svg class="nav-icon">
                             <use href="images/sprite.svg#inbox"></use>
@@ -68,12 +68,12 @@
                         <span></span>
                     </li>
                 </ul>
+                <h3 class="navigation__heading  text-md">LISTS</h3>
                 <ul class="navigation  flex-col">
-                    <h3 class="navigation__heading  text-md">LISTS</h3>
                     <li class="navigation__item">linkedin</li>
                 </ul>
+                <h3 class="navigation__heading  text-md">LABELS</h3>
                 <ul class="navigation  flex-col">
-                    <h3 class="navigation__heading  text-md">LABELS</h3>
                     <li class="navigation__item  flex  flex-ai-c  fw-600">
                         <span class="ring  ring--violet"></span>
                         <span>Personal</span>
@@ -108,7 +108,7 @@
             </div>
         </aside>
 
-        <div class="mail-list  scroll-y">
+        <div class="mail-list  scroll-y  no-shrink">
             <div class="mail-list__header  pd-md">
                 <div class="search-bar  flex">
                     <svg class="search-bar__icon">
@@ -130,67 +130,97 @@
                 </div>
             </div>
             <ul>
-                <li class="list-item  flex  unread  flex-jc-sb">
-                    <div class="flex-col">
+                <li class="list-item  unread">
+                    <div class="flex flex-jc-sb">
                         <div class="list-item__subject"><span class="text-ellipsis  text-md">Design Language</span>
                         </div>
+                        <span class="text-sm">08:00 PM</span>
+                    </div>
+                    <div>
                         <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
-                    <div class="text-sm">08:00 PM</div>
                 </li>
-                <li class="list-item  flex  active  flex-jc-sb">
-                    <div class="flex-col">
-                        <div class="list-item__subject"><span class="text-ellipsis  text-md">Nextmail New Look</span>
+                <li class="list-item   active">
+                    <div class="flex  flex-jc-sb">
+                        <div class="list-item__subject">
+                            <span class="text-ellipsis  text-md">Nextmail New Look</span>
                         </div>
-                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
+                        <span class="text-sm">11:00 AM</span>
                     </div>
-                    <div class="text-sm">11:00 AM</div>
+                    <div class="flex  flex-jc-sb">
+                        <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
+                        <svg width="12" height="12">
+                            <use href="images/sprite.svg#attachments"></use>
+                        </svg>
+                    </div>
+
                 </li>
-                <li class="list-item  flex  unread   flex-jc-sb">
-                    <div class="flex-col">
-                        <div class="list-item__subject"><span class="text-ellipsis  text-md">Interview with
-                                Shopify</span></div>
+                <li class="list-item  unread">
+                    <div class="flex  flex-jc-sb">
+                        <div class="list-item__subject">
+                            <span class="text-ellipsis  text-md">Interview with
+                                Shopify</span>
+                        </div>
+                        <span class="text-sm">12:05 PM</span>
+                    </div>
+                    <div>
                         <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Aisha Dialo</span>
                     </div>
-                    <div class="text-sm">12:05 PM</div>
                 </li>
-                <li class="list-item  flex  unread  flex-jc-sb">
-                    <div class="flex-col">
-                        <div class="list-item__subject"><span class="text-ellipsis  text-md">Narcos Season 2</span>
+                <li class="list-item  unread">
+                    <div class="flex  flex-jc-sb">
+                        <div class="list-item__subject">
+                            <span class="text-ellipsis  text-md">Narcos Season 2</span>
                         </div>
+                        <span class="text-sm">07:35 PM</span>
+                    </div>
+                    <div>
                         <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Netflix</span>
                     </div>
-                    <div class="text-sm">07:35 PM</div>
+
                 </li>
-                <li class="list-item  flex  unread  flex-jc-sb">
-                    <div class="flex-col">
-                        <div class="list-item__subject"><span class="text-ellipsis  text-md"> Top Stories of the
-                                Day</span></div>
+                <li class="list-item  unread">
+                    <div class="flex  flex-jc-sb">
+                        <div class="list-item__subject">
+                            <span class="text-ellipsis  text-md"> Top Stories of the
+                                Day</span>
+                        </div>
+                        <span class="text-sm">Yesterday</span>
+                    </div>
+                    <div>
                         <span class="list-item__sender  text-sm  fw-600  text-ellipsis">TechCrunch</span>
                     </div>
-                    <div class="text-sm">Yesterday</div>
                 </li>
-                <li class="list-item  flex  unread  flex-jc-sb">
-                    <div class="flex-col">
-                        <div class="list-item__subject"><span class="text-ellipsis  text-md">Updates from Kevin</span>
+                <li class="list-item  unread">
+                    <div class="flex  flex-jc-sb">
+                        <div class="list-item__subject">
+                            <span class="text-ellipsis  text-md">Updates from Kevin</span>
                         </div>
+                        <span class="text-sm">Yesterday</span>
+                    </div>
+                    <div>
                         <span class=" list-item__sender  text-sm  fw-600  text-ellipsis">Goodreads</span>
                     </div>
-                    <div class="text-sm">Yesterday</div>
                 </li>
-                <li class="list-item  flex  unread  flex-jc-sb">
-                    <div class="flex-col">
+                <li class="list-item  unread">
+                    <div class="flex  flex-jc-sb">
                         <div class="list-item__subject"><span class="text-ellipsis  text-md">Startup 2016</span></div>
+                        <span class="text-sm">09 Oct, 16</span>
+
+                    </div>
+                    <div>
                         <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
-                    <div class="text-sm">09 Oct, 16</div>
                 </li>
-                <li class="list-item  flex  unread  flex-jc-sb">
-                    <div class="flex-col">
+                <li class="list-item  unread">
+                    <div class="flex  flex-jc-sb">
                         <div class="list-item__subject"><span class="text-ellipsis  text-md">Startup 2016</span></div>
+                        <span class="text-sm">09 Oct, 16</span>
+
+                    </div>
+                    <div>
                         <span class="list-item__sender  text-sm  fw-600  text-ellipsis">Salman Shah</span>
                     </div>
-                    <div class="text-sm">09 Oct, 16</div>
                 </li>
             </ul>
         </div>
@@ -220,7 +250,7 @@
                 </li>
                 <li class="actions-bar__item  flex-center">
                     <svg class="actions-bar__icon">
-                        <use href="images/sprite.svg#attachments"></use>
+                        <use href="images/sprite.svg#catagorize"></use>
                     </svg>
                 </li>
                 <li class="actions-bar__item  flex-center">
@@ -265,7 +295,7 @@
                 </div>
                 <div class="attachment-container">
                     <a href="javascript:void(0)" class="attachment flex">
-                        <svg class="attachment__image">
+                        <svg class="attachment__image   no-shrink">
                             <use href="images/sprite.svg#pdf"></use>
                         </svg>
 
@@ -274,7 +304,7 @@
                 </div>
             </div>
             <div class="message-actions  flex  pd-md">
-                <button class="btn  btn--secondary  flex-center"><img class="reply-icon" src="images/forward.png"
+                <button class="btn  btn--primary  flex-center"><img class="reply-icon" src="images/reply.png"
                         alt="reply"> Reply</button>
                 <button class="btn  btn--secondary  flex-center">
                     <img class="forward-icon" src="images/forward.png" alt="forward">

@@ -75,6 +75,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/images/reply.png":
+/*!*************************************!*\
+  !*** ./src/assets/images/reply.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/reply.png\");\n\n//# sourceURL=webpack://t13-nextmail/./src/assets/images/reply.png?");
+
+/***/ }),
+
 /***/ "./src/assets/images/sprite.svg":
 /*!**************************************!*\
   !*** ./src/assets/images/sprite.svg ***!
@@ -103,7 +114,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./compose.png\": \"./src/assets/images/compose.png\",\n\t\"./edit.png\": \"./src/assets/images/edit.png\",\n\t\"./forward.png\": \"./src/assets/images/forward.png\",\n\t\"./log.png\": \"./src/assets/images/log.png\",\n\t\"./logo@2x.png\": \"./src/assets/images/logo@2x.png\",\n\t\"./profile.png\": \"./src/assets/images/profile.png\",\n\t\"./sprite.svg\": \"./src/assets/images/sprite.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/images sync recursive \\\\.(png%7Cjpe?g%7Cgif%7Csvg)$\";\n\n//# sourceURL=webpack://t13-nextmail/./src/assets/images/_sync_\\.(png%257Cjpe?");
+eval("var map = {\n\t\"./compose.png\": \"./src/assets/images/compose.png\",\n\t\"./edit.png\": \"./src/assets/images/edit.png\",\n\t\"./forward.png\": \"./src/assets/images/forward.png\",\n\t\"./log.png\": \"./src/assets/images/log.png\",\n\t\"./logo@2x.png\": \"./src/assets/images/logo@2x.png\",\n\t\"./profile.png\": \"./src/assets/images/profile.png\",\n\t\"./reply.png\": \"./src/assets/images/reply.png\",\n\t\"./sprite.svg\": \"./src/assets/images/sprite.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/images sync recursive \\\\.(png%7Cjpe?g%7Cgif%7Csvg)$\";\n\n//# sourceURL=webpack://t13-nextmail/./src/assets/images/_sync_\\.(png%257Cjpe?");
 
 /***/ }),
 
