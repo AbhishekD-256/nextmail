@@ -1,12 +1,7 @@
 .header {
     @include bg-color(#33495f);
     height: 44px;
-
-    &__img {
-        max-width: 100px;
-        line-height: 0;
-        img {
-            width: 100%;
-        }
+    img {
+        width: 100px;
     }
 }

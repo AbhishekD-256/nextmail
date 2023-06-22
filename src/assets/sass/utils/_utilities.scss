@@ -1,23 +1,36 @@
-.flex {
+%flex {
     display: flex;
+}
+%justfy-content-sb {
+    justify-content: space-between
+}
+%align-items-center {
+    align-items: center;
+}
+.flex {
+    @extend %flex;
 
     &-space,
     &-center {
-        display: flex;
-        align-items: center;
+        @extend %flex;
+        @extend %align-items-center;
     }
     &-center {
         justify-content: center;
     }
     &-space {
-        justify-content: space-between;
+        @extend %justfy-content-sb;
     }
     &-col {
+        @extend %flex;
         flex-direction: column;
     }
 }
 .flex-jc-sb {
-    justify-content: space-between;
+    @extend %justfy-content-sb;
+}
+.flex-ai-c {
+    @extend %align-items-center;
 }
 
 .pd-md {
