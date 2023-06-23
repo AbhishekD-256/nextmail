@@ -204,6 +204,7 @@ span {
 .email-profile--sm .email-profile__image {
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 .email-profile--sm .email-profile__name, .email-profile--sm .email-profile__mail {
   max-width: 120px;
@@ -214,6 +215,7 @@ span {
 .email-profile--lg .email-profile__image {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 .email-profile--lg .email-profile__name {
   font-size: 18px;
@@ -316,6 +318,9 @@ body {
   height: 8px;
   background-color: #379aff;
   border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 .list-item.active {
   background-color: #ffffff;
@@ -352,6 +357,7 @@ body {
   position: relative;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   border: solid 1px #65676e;
   cursor: pointer;
 }

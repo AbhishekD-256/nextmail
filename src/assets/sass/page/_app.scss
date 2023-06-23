@@ -58,6 +58,7 @@ body {
             &::before {
                 @include position-before-el(8px, -16px, 8px, 8px);
                 border-radius: 50%;
+                @include rounded-box(8px, 8px)
             }
         }
     }
@@ -90,7 +91,7 @@ body {
     }
     &__item{
         position: relative;
-        @include size(44px, 44px);
+        @include rounded-box(44px, 44px);
         border: solid 1px $text-light-color;
         cursor: pointer;
         &::after {

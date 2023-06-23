@@ -10,7 +10,7 @@
         padding: 12px 16px;
         border-top: light-border(0.2);
         .email-profile__image {
-            @include size(36px, 36px);
+            @include rounded-box(36px, 36px);
         }
         .email-profile__name, .email-profile__mail {
             max-width: 120px;
@@ -21,7 +21,7 @@
         gap: 10px;
 
         .email-profile__image {
-            @include size(44px, 44px);
+            @include rounded-box(44px, 44px);
         }
         .email-profile__name {
             font-size: 18px;
