@@ -1,0 +1,17 @@
+.dropdown {
+    position: absolute;
+    @include bg-color($primary-color);
+    box-shadow: 0 0 5px 0 #8f929d;
+    border-radius: 6px;
+    z-index: 10;
+    padding:8px;
+    right: 0;
+    &__link {
+        padding: 4px 20px ;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover {
+            background-color: #e5e6e5;
+        }
+    }
+}

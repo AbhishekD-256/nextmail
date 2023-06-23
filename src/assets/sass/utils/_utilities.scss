@@ -47,11 +47,13 @@
     height: 100%;
     object-fit: contain;
 }
+
 .text-ellipsis {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
+
 .border-b {
     border-bottom:  light-border(0.1);
 }
