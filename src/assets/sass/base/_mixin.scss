@@ -1,12 +1,7 @@
-@mixin position-before-el($top, $left, $width, $height){
-    content: '';
+@mixin position-abs($top, $left){
     position: absolute;
     top: $top;
     left: $left;
-    width: $width;
-    height: $height;
-    background-color: #379aff;
-
 }
 
 @mixin size($width, $height) {

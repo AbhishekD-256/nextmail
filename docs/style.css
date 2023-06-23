@@ -98,16 +98,14 @@ span {
   border-bottom: 1px solid rgba(101, 103, 110, 0.1);
 }
 
-.rad-50 {
-  border-radius: 50%;
-}
-
 .hide {
   display: none;
 }
 
 .dropdown {
   position: absolute;
+  top: auto;
+  left: 60%;
   background-color: #ffffff;
   box-shadow: 0 0 5px 0 #8f929d;
   border-radius: 6px;
@@ -316,11 +314,8 @@ body {
   left: -16px;
   width: 8px;
   height: 8px;
+  border-radius: 50%;
   background-color: #379aff;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
 }
 .list-item.active {
   background-color: #ffffff;

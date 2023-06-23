@@ -56,9 +56,11 @@ body {
     &.unread {
         .list-item__subject {
             &::before {
-                @include position-before-el(8px, -16px, 8px, 8px);
-                border-radius: 50%;
-                @include rounded-box(8px, 8px)
+                content: '';
+                @include position-abs(8px, -16px);
+                @include rounded-box(8px, 8px);
+                background-color: #379aff;
+
             }
         }
     }
@@ -66,7 +68,11 @@ body {
     &.active {
         background-color: $primary-color;
         &::before {
-            @include position-before-el(0, 0, 3px, 100%);
+            content: '';
+            @include position-abs(0, 0);
+            @include size(3px, 100%);
+            background-color: #379aff;
+
         }
     }
 

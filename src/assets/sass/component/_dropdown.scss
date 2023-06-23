@@ -1,5 +1,5 @@
 .dropdown {
-    position: absolute;
+    @include position-abs(auto,60%);
     background-color: $primary-color;
     box-shadow: 0 0 5px 0 #8f929d;
     border-radius: 6px;
