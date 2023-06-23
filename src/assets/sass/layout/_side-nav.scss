@@ -2,13 +2,7 @@
     width: 200px;
 }
 
-.navigation {    
-    .compose-btn {
-        &:hover {
-            @include bg-color(#00985b);
-        }
-    }
-    
+.navigation {        
     &-container {
         padding: 28px 20px 0 28px;
     }
@@ -33,7 +27,7 @@
         }
 
         &:hover {
-            @include bg-color(#e5e6e5)
+            background-color: #e5e6e5;
          }
     }
 }

@@ -1,10 +1,10 @@
 body {
-    @include bg-color($primary-color);
     height: 100vh;
     font-size: $base-font-size;
     font-family: 'Open Sans', sans-serif;
     color: $text-light-color;
     overflow: hidden;
+    background-color: $primary-color;
 }
 
 .app {
@@ -12,12 +12,12 @@ body {
 }
 
 .mail-list {
-    @include bg-color(#f9f9f9);
+    background-color: #f9f9f9;
     width: 336px;
 
     &__header {
         .search-bar {
-            @include bg-color($primary-color);
+            background-color: $primary-color;
             min-width: 276px;
             border-radius: 20px;
             border: solid 1px rgba(151, 151, 151, 0.1);
@@ -50,7 +50,7 @@ body {
     cursor: pointer;
 
     &:hover {
-        @include bg-color($primary-color);
+        background-color: $primary-color;
     }
 
     &.unread {
@@ -63,7 +63,7 @@ body {
     }
 
     &.active {
-        @include bg-color($primary-color);
+        background-color: $primary-color;
         &::before {
             @include position-before-el(0, 0, 3px, 100%);
         }
@@ -94,7 +94,7 @@ body {
         border: solid 1px $text-light-color;
         cursor: pointer;
         &::after {
-            @include bg-color($text-dark-color);
+            background-color: $text-dark-color;
             color: #f9f9f9;
             padding: 4px;
             font-size: 10px;
@@ -107,7 +107,7 @@ body {
             letter-spacing: 1px;
         }
         &:hover {
-            @include bg-color(#8f929d3c);
+            background-color:#8f929d3c ;
             &::after{
                 display: block;
             }

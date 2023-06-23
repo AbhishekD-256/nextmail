@@ -1,6 +1,6 @@
 .dropdown {
     position: absolute;
-    @include bg-color($primary-color);
+    background-color: $primary-color;
     box-shadow: 0 0 5px 0 #8f929d;
     border-radius: 6px;
     z-index: 10;

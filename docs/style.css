@@ -234,9 +234,6 @@ span {
   width: 200px;
 }
 
-.navigation .compose-btn:hover {
-  background-color: #00985b;
-}
 .navigation-container {
   padding: 28px 20px 0 28px;
 }
@@ -261,12 +258,12 @@ span {
 }
 
 body {
-  background-color: #ffffff;
   height: 100vh;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: #65676e;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .app {

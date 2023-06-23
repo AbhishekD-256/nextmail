@@ -1,7 +1,3 @@
-@mixin bg-color($color){
-    background-color: $color;
-}
-
 @mixin position-before-el($top, $left, $width, $height){
     content: '';
     position: absolute;
@@ -9,7 +5,7 @@
     left: $left;
     width: $width;
     height: $height;
-    @include bg-color(#379aff);
+    background-color: #379aff;
 
 }
 
