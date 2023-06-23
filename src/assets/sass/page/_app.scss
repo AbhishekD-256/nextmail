@@ -16,6 +16,10 @@ body {
     width: 336px;
 
     &__header {
+        @include vendor-prefix(position, sticky);
+        top: 0;
+        background-color: #f9f9f9;
+        z-index: 2;
         .search-bar {
             background-color: $primary-color;
             min-width: 276px;
@@ -42,7 +46,7 @@ body {
         }
         .filter-menu {
             cursor: pointer;
-            @include user-select;
+            @include vendor-prefix(user-select, none);
         }
     }
 }   
@@ -95,7 +99,10 @@ body {
     }
 }
 .actions-bar {
+    position: sticky;
+    top: 0;
     gap: 8px;
+    background-color: $primary-color;
     &__icon {
         @include size(22px, 16px);
     }

@@ -232,6 +232,12 @@ span {
 .side-bar {
   width: 200px;
 }
+.side-bar .email-profile {
+  position: sticky;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 10;
+}
 
 .navigation-container {
   padding: 28px 20px 0 28px;
@@ -244,10 +250,11 @@ span {
 .navigation__item {
   padding: 8px 0;
   cursor: pointer;
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 .navigation__item:last-child {
   margin-bottom: 12px;
@@ -277,6 +284,16 @@ body {
   background-color: #f9f9f9;
   width: 336px;
 }
+.mail-list__header {
+  -webkit-position: sticky;
+  -moz-position: sticky;
+  -ms-position: sticky;
+  -o-position: sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 2;
+}
 .mail-list__header .search-bar {
   background-color: #ffffff;
   min-width: 276px;
@@ -302,10 +319,11 @@ body {
 }
 .mail-list__header .filter-menu {
   cursor: pointer;
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .list-item {
@@ -352,7 +370,10 @@ body {
 }
 
 .actions-bar {
+  position: sticky;
+  top: 0;
   gap: 8px;
+  background-color: #ffffff;
 }
 .actions-bar__icon {
   width: 22px;

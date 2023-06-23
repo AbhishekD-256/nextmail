@@ -1,5 +1,11 @@
 .side-bar {
     width: 200px;
+    .email-profile {
+        position: sticky;
+        bottom: 0;
+        background-color: $primary-color;
+        z-index: 10;
+    }
 }
 
 .navigation {        
@@ -16,7 +22,7 @@
     &__item {
         padding: 8px 0;
         cursor: pointer;
-        @include user-select;
+        @include vendor-prefix(user-select, none);
 
         &:last-child {
             margin-bottom: 12px;
