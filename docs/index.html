@@ -102,13 +102,13 @@
                 </ul>
             </div>
 
-            <div class="email-profile  flex  flex-ai-c">
-                <figure class="email-profile__image  rad-50">
+            <div class="email-profile  email-profile--sm  flex  flex-ai-c">
+                <figure class="email-profile__image  rad-50  no-shrink">
                     <img class="image-fit" src="images/profile.png" alt="profile">
                 </figure>
                 <div class="flex-col">
-                    <span class="email-profile__name  fw-600">Christian Bale</span>
-                    <span class="text-xsm">christian.bale@gmaiil.com</span>
+                    <span class="email-profile__name  fw-600  text-ellipsis">Christian Bale</span>
+                    <span class="email-profile__mail   text-xsm   text-ellipsis">christian.bale@gmail.com</span>
                 </div>
             </div>
         </aside>
@@ -240,32 +240,32 @@
         <section class="mail-view  scroll-y">
 
             <ul class="actions-bar  flex  pd-md  border-b">
-                <li class="actions-bar__item  flex-center  rad-50">
+                <li class="actions-bar__item  flex-center  rad-50" data-tooltip="read/unread">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#read"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center  rad-50">
+                <li class="actions-bar__item  flex-center  rad-50" data-tooltip="exit">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#exit"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center  rad-50">
+                <li class="actions-bar__item  flex-center  rad-50" data-tooltip="snooze">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#snooze"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center  rad-50">
+                <li class="actions-bar__item  flex-center  rad-50" data-tooltip="options">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#options"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center  rad-50">
+                <li class="actions-bar__item  flex-center  rad-50" data-tooltip="catagorize">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#catagorize"></use>
                     </svg>
                 </li>
-                <li class="actions-bar__item  flex-center  rad-50">
+                <li class="actions-bar__item  flex-center  rad-50" data-tooltip="trash">
                     <svg class="actions-bar__icon">
                         <use href="images/sprite.svg#trash"></use>
                     </svg>
@@ -276,13 +276,13 @@
                 <div class="message-header  border-b">
                     <div class="message-subject  text-lg">Nextmail New Look</div>
                     <div class="flex  flex-jc-sb">
-                        <div class="sender-profile  flex">
-                            <figure class="sender-profile__image  rad-50">
+                        <div class="email-profile  email-profile--lg  flex  flex-ai-c">
+                            <figure class="email-profile__image  rad-50  no-shrink">
                                 <img class="image-fit" src="images/profile.png" alt="profile">
                             </figure>
 
                             <div class="flex-col">
-                                <span class="sender-profile__name">Christopher Nolan</span>
+                                <span class="email-profile__name">Christopher Nolan</span>
                                 <span class="text-sm">From:<a href="mailto:christoper.nolan@gmaiil.com"
                                         class="fw-600">christoper.nolan@gmail.com</a></span>
                             </div>
