@@ -1,0 +1,43 @@
+.actions-bar {
+    position: sticky;
+    top: 0;
+    gap: 8px;
+    background-color: $primary-color;
+
+    &__item{
+        position: relative;
+        @include rounded-box(44px, 44px);
+        border: solid 1px $text-light-color;
+        cursor: pointer;
+
+        @include tooltip;
+
+        &:hover {
+            background-color:#8f929d3c ;
+        }
+    }
+
+}
+.mail-view {
+    flex: 1;
+    &-box {
+        padding-top: 0;
+    }
+}
+.message-header {
+    padding: 16px 0;
+    .message-subject {
+        margin-bottom: 20px;
+    }
+}
+
+.message-content {
+    line-height: 1.71;
+    padding: 28px 0;
+}
+.attachment-container {
+    padding: 20px 0;
+}
+.message-actions {
+    gap: 16px;
+}

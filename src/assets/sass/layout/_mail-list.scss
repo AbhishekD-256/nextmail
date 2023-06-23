@@ -1,0 +1,87 @@
+.mail-list {
+    background-color: #f9f9f9;
+    width: 336px;
+
+    &__header {
+        @include vendor-prefix(position, sticky);
+        top: 0;
+        background-color: #f9f9f9;
+        z-index: 2;
+        .search-bar {
+            background-color: $primary-color;
+            min-width: 276px;
+            border-radius: 20px;
+            border: solid 1px rgba(151, 151, 151, 0.1);
+            padding: 0 20px;
+
+            &__icon {
+                align-self:center;
+            }
+            input {
+                padding: 12px 0;
+                flex-grow: 1;
+                font-size: 14px;
+                color: $text-dark-color;
+                &::placeholder {
+                    color: #8f929d;
+                }
+            }
+        }
+        .filter-container {
+            padding-top: 28px;
+            position: relative;
+        }
+        .filter-menu {
+            cursor: pointer;
+            @include vendor-prefix(user-select, none);
+        }
+    }
+}  
+
+.list-item {
+    position: relative;
+    padding: 20px 28px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+
+    &.unread {
+        .list-item__subject {
+            &::before {
+                content: '';
+                @include position-abs(8px, -16px);
+                @include rounded-box(8px, 8px);
+                background-color: #379aff;
+
+            }
+        }
+    }
+
+    &.active {
+        background-color: $primary-color;
+        &::before {
+            content: '';
+            @include position-abs(0, 0);
+            @include size(3px, 100%);
+            background-color: #379aff;
+
+        }
+    }
+
+    &__sender {
+        max-width: 150px;
+    }
+
+    &__subject {
+        font-weight: bold;
+        margin-bottom: 8px;
+        position: relative;
+
+        span {
+            max-width: 200px;
+        }
+    }
+}
