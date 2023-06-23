@@ -106,6 +106,15 @@ span {
   display: none;
 }
 
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.icon--img {
+  object-fit: contain;
+}
+
 .btn {
   border-radius: 100px;
   width: 125px;
@@ -240,22 +249,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #65676e;
   overflow: hidden;
-}
-
-.compose-img,
-.nav-icon,
-.search-bar__icon,
-.reply-icon,
-.forward-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-
-.compose-img,
-.reply-icon,
-.forward-icon {
-  object-fit: contain;
 }
 
 .app {

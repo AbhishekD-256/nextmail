@@ -7,20 +7,6 @@ body {
     overflow: hidden;
 }
 
-.compose-img,
-.nav-icon,
-.search-bar__icon,
-.reply-icon,
-.forward-icon  {
-    @include size(16px, 16px);
-    margin-right: 8px;
-}
-.compose-img,
-.reply-icon,
-.forward-icon {
-    object-fit: contain;
-}
-
 .app {
     height: calc(100% - 44px);
 }
