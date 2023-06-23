@@ -78,6 +78,10 @@ span {
   padding: 28px;
 }
 
+.mr-8 {
+  margin-right: 8px;
+}
+
 .scroll-y {
   overflow-y: auto;
 }
@@ -121,13 +125,13 @@ span {
   background-color: #e5e6e5;
 }
 
-.icon {
+.icon--sm {
   width: 16px;
   height: 16px;
-  margin-right: 8px;
 }
-.icon--img {
-  object-fit: contain;
+.icon--lg {
+  width: 24px;
+  height: 16px;
 }
 
 .btn {
@@ -135,6 +139,10 @@ span {
   width: 125px;
   height: 45px;
   font-size: 14px;
+}
+.btn img {
+  width: 16px;
+  height: 16px;
 }
 .btn--primary {
   background-color: #00b96e;
@@ -374,10 +382,6 @@ body {
   top: 0;
   gap: 8px;
   background-color: #ffffff;
-}
-.actions-bar__icon {
-  width: 22px;
-  height: 16px;
 }
 .actions-bar__item {
   position: relative;

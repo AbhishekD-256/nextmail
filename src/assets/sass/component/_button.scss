@@ -3,6 +3,9 @@
     width: 125px;
     height: 45px;
     font-size: 14px;
+    img {
+    @include size(16px, 16px);
+    }
     &--primary {
         background-color: #00b96e;
         box-shadow: 0 0 15px 0 rgba(7, 156, 95, 0.3);
