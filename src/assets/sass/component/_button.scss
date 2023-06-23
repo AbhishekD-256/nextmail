@@ -18,6 +18,10 @@
         background-color: transparent;
         border: 2px solid rgba($text-light-color, 0.5);
         color:rgba($text-light-color, 0.8);
+
+        &:hover {
+            background-color:#8f929d3c ;
+        }
     }
 
 }

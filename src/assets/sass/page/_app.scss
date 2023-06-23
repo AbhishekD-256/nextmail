@@ -109,8 +109,12 @@ body {
         @include rounded-box(44px, 44px);
         border: solid 1px $text-light-color;
         cursor: pointer;
-       
+
         @include tooltip;
+
+        &:hover {
+            background-color:#8f929d3c ;
+        }
     }
 
 }

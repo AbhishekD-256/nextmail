@@ -12,8 +12,8 @@
         display: none;
         letter-spacing: 1px;
     }
+
     &:hover {
-        background-color:#8f929d3c ;
         &::after{
             display: block;
         }
