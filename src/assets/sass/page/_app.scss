@@ -40,6 +40,10 @@ body {
             padding-top: 28px;
             position: relative;
         }
+        .filter-menu {
+            cursor: pointer;
+            @include user-select;
+        }
     }
 }   
 

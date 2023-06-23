@@ -16,6 +16,7 @@
     &__item {
         padding: 8px 0;
         cursor: pointer;
+        @include user-select;
 
         &:last-child {
             margin-bottom: 12px;

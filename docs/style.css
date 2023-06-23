@@ -111,7 +111,6 @@ span {
   border-radius: 6px;
   z-index: 10;
   padding: 8px;
-  right: 0;
 }
 .dropdown__link {
   padding: 4px 20px;
@@ -245,6 +244,10 @@ span {
 .navigation__item {
   padding: 8px 0;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .navigation__item:last-child {
   margin-bottom: 12px;
@@ -296,6 +299,13 @@ body {
 .mail-list__header .filter-container {
   padding-top: 28px;
   position: relative;
+}
+.mail-list__header .filter-menu {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .list-item {
