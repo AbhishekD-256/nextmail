@@ -93,6 +93,10 @@ span {
   padding: 28px;
 }
 
+.pd-l-24 {
+  padding-left: 24px !important;
+}
+
 .mr-8 {
   margin-right: 8px;
 }

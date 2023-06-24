@@ -4,7 +4,7 @@ function importAll(r) {
 }
 importAll(require.context("../images/", true, /\.(png|jpe?g|gif|svg)$/));
 
-const mailList = document.querySelectorAll(".list-item");
+const mailList = document.querySelectorAll(".js-list-item");
 
 //=============== ACTIVE-MAIL =================//
 
@@ -24,24 +24,24 @@ mailList.forEach((item) => {
 
 //==================== DROPDOWN ======================//
 
-const filterMenu = document.querySelector(".filter-menu");
-const dropdown = document.querySelector(".dropdown");
+const filterMenu = document.querySelector(".js-filter-btn");
+const dropdown = document.querySelector(".js-dropdown");
 
 filterMenu.addEventListener("click", function () {
   dropdown.classList.toggle("hide");
 });
 
 document.addEventListener("click", function (e) {
-  const element = e.target.closest(".filter-menu");
-  if (element?.classList.contains("filter-menu")) return;
+  const element = e.target.closest(".js-filter-btn");
+  if (element?.classList.contains("js-filter-btn")) return;
   dropdown.classList.add("hide");
 });
 
 //==================== MORE-OPTIONS ======================//
 
-const moreNav = document.querySelector(".more-nav");
+const moreNav = document.querySelector(".js-more-nav");
 const moreBtn = document.querySelector(".js-more");
-const moreTextToggle = moreBtn.querySelector(".more-text");
+const moreTextToggle = moreBtn.querySelector(".js-more-text");
 
 moreBtn.addEventListener("click", function () {
   moreNav.classList.toggle("hide");
