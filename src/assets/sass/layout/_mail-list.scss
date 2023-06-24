@@ -31,11 +31,9 @@
 
         .filter-container {
             padding-top: 28px;
-            position: relative;
         }
 
         .filter-menu {
-            cursor: pointer;
             @include vendor-prefix(user-select, none);
         }
     }
@@ -45,7 +43,6 @@
         gap: 8px;
         padding: 20px 28px;
         border-bottom: 1px solid #ededed;
-        cursor: pointer;
     
         &:hover {
             background-color: $primary-color;
@@ -67,7 +64,6 @@
         }
     
         .subject {
-            position: relative;
             span {
                 max-width: 200px;
             }

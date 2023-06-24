@@ -8,8 +8,7 @@
         position: relative;
         @include rounded-box(44px, 44px);
         border: solid 1px $text-light-color;
-        cursor: pointer;
-
+        
         @include tooltip;
 
         &:hover {

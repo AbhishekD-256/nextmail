@@ -1,3 +1,8 @@
+@import './reset';
+@import './variables';
+@import './typography';
+@import './mixin';
+
 body {
     height: 100vh;
     font-size: $base-font-size;

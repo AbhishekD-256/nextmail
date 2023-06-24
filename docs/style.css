@@ -1,12 +1,17 @@
 /*!********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/sass/main.scss ***!
   \********************************************************************************************************************/
+a, article, b, blockquote, body, center, cite, code, details, div, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, header, html, i, iframe, img, label, li, main, menu, nav, object, ol, p, s, section, span, strong, sub, table, tbody, td, th, thead, time, tr, tt, ul, var, video {
+  border: 0;
+  vertical-align: baseline;
+}
+
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 ul, ol {
@@ -52,6 +57,19 @@ span {
 }
 .fw-600 {
   font-weight: 600;
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #65676e;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.app {
+  height: calc(100% - 44px);
 }
 
 .flex-col, .flex-space, .flex-center, .flex {
@@ -121,6 +139,14 @@ span {
   border-bottom: 1px solid rgba(101, 103, 110, 0.1);
 }
 
+.cursor-p {
+  cursor: pointer;
+}
+
+.pos-rel {
+  position: relative;
+}
+
 .hide {
   display: none;
 }
@@ -128,7 +154,7 @@ span {
 .dropdown {
   position: absolute;
   top: auto;
-  left: 60%;
+  left: -60%;
   background-color: #ffffff;
   box-shadow: 0 0 5px 0 #8f929d;
   border-radius: 6px;
@@ -137,7 +163,6 @@ span {
 }
 .dropdown__link {
   padding: 4px 20px;
-  cursor: pointer;
   border-radius: 4px;
 }
 .dropdown__link:hover {
@@ -285,7 +310,6 @@ span {
 }
 .navigation__item {
   padding: 8px 0;
-  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -335,10 +359,8 @@ span {
 }
 .mail-list__header .filter-container {
   padding-top: 28px;
-  position: relative;
 }
 .mail-list__header .filter-menu {
-  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -350,7 +372,6 @@ span {
   gap: 8px;
   padding: 20px 28px;
   border-bottom: 1px solid #ededed;
-  cursor: pointer;
 }
 .mail-list__item:hover {
   background-color: #ffffff;
@@ -369,9 +390,6 @@ span {
 }
 .mail-list__item .sender {
   max-width: 150px;
-}
-.mail-list__item .subject {
-  position: relative;
 }
 .mail-list__item .subject span {
   max-width: 200px;
@@ -399,7 +417,6 @@ span {
   height: 44px;
   border-radius: 50%;
   border: solid 1px #65676e;
-  cursor: pointer;
 }
 .actions-bar__item::after {
   background-color: #4c4f59;
@@ -446,17 +463,4 @@ span {
 
 .message-actions {
   gap: 16px;
-}
-
-body {
-  height: 100vh;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  color: #65676e;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.app {
-  height: calc(100% - 44px);
 }

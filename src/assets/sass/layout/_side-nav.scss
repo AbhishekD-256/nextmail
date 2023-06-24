@@ -25,7 +25,6 @@
 
     &__item {
         padding: 8px 0;
-        cursor: pointer;
         @include vendor-prefix(user-select, none);
 
         &.active {
