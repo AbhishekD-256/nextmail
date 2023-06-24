@@ -5,6 +5,12 @@ $fonts: (lg:24px, md: 15px, sm: 12px, xsm: 10px);
     }
 }
 
-.fw-600 {
-    font-weight: 600;
+$font-weights: normal, 600;
+
+.fw {
+    @each $weight  in $font-weights {
+        &-#{$weight} {
+            font-weight: $weight;
+        }
+    }
 }

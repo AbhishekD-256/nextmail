@@ -17,6 +17,7 @@
             &__icon {
                 align-self:center;
             }
+
             input {
                 padding: 12px 0;
                 flex-grow: 1;
@@ -27,61 +28,61 @@
                 }
             }
         }
+
         .filter-container {
             padding-top: 28px;
             position: relative;
         }
+
         .filter-menu {
             cursor: pointer;
             @include vendor-prefix(user-select, none);
         }
     }
-}  
 
-.list-item {
-    position: relative;
-    padding: 20px 28px;
-    border-bottom: 1px solid #ededed;
-    cursor: pointer;
+    &__item {
+        position: relative;
+        gap: 8px;
+        padding: 20px 28px;
+        border-bottom: 1px solid #ededed;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: $primary-color;
+        }
 
-    &:hover {
-        background-color: $primary-color;
-    }
-
-    &.unread {
-        .list-item__subject {
+        &.active {
+            background-color: $primary-color;
             &::before {
                 content: '';
-                @include position-abs(8px, -16px);
-                @include rounded-box(8px, 8px);
+                @include position-abs(0, 0);
+                @include size(3px, 100%);
                 background-color: #379aff;
-
+    
+            }
+        }
+    
+        .sender {
+            max-width: 150px;
+        }
+    
+        .subject {
+            position: relative;
+            span {
+                max-width: 200px;
+            }
+        }
+            
+        &.unread {
+            .subject {
+                &::before {
+                    content: '';
+                    @include position-abs(8px, -16px);
+                    @include rounded-box(8px, 8px);
+                    background-color: #379aff;
+    
+                }
             }
         }
     }
-
-    &.active {
-        background-color: $primary-color;
-        &::before {
-            content: '';
-            @include position-abs(0, 0);
-            @include size(3px, 100%);
-            background-color: #379aff;
-
-        }
-    }
-
-    &__sender {
-        max-width: 150px;
-    }
-
-    &__subject {
-        font-weight: bold;
-        margin-bottom: 8px;
-        position: relative;
-
-        span {
-            max-width: 200px;
-        }
-    }
-}
+}  

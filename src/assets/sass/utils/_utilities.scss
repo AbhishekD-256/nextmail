@@ -1,12 +1,15 @@
 %flex {
     display: flex;
 }
+
 %justfy-content-sb {
-    justify-content: space-between
+    @include vendor-prefix(justify-content, space-between)
 }
+
 %align-items-center {
-    align-items: center;
+    @include vendor-prefix(align-items, center)
 }
+
 .flex {
     @extend %flex;
 
@@ -23,15 +26,18 @@
     }
     &-col {
         @extend %flex;
-        flex-direction: column;
+        @include vendor-prefix(flex-direction, column)
     }
 }
+
 .flex-jc-sb {
     @extend %justfy-content-sb;
 }
+
 .flex-ai-c {
     @extend %align-items-center;
 }
+
 .no-shrink {
     flex-shrink: 0;
 }
@@ -51,6 +57,7 @@
 .scroll-y {
     overflow-y: auto;
 }
+
 .image-fit {
     width: 100%;
     height: 100%;

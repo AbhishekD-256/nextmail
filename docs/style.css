@@ -47,6 +47,9 @@ span {
   font-size: 10px;
 }
 
+.fw-normal {
+  font-weight: normal;
+}
 .fw-600 {
   font-weight: 600;
 }
@@ -56,10 +59,18 @@ span {
 }
 
 .flex-jc-sb, .flex-space {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
   justify-content: space-between;
 }
 
 .flex-ai-c, .flex-space, .flex-center {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
   align-items: center;
 }
 
@@ -67,6 +78,10 @@ span {
   justify-content: center;
 }
 .flex-col {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
   flex-direction: column;
 }
 
@@ -130,7 +145,7 @@ span {
   height: 16px;
 }
 .icon--lg {
-  width: 24px;
+  width: 22px;
   height: 16px;
 }
 
@@ -156,6 +171,9 @@ span {
   background-color: transparent;
   border: 2px solid rgba(101, 103, 110, 0.5);
   color: rgba(101, 103, 110, 0.8);
+}
+.btn--secondary:hover {
+  background-color: rgba(143, 146, 157, 0.2352941176);
 }
 
 .ring {
@@ -247,6 +265,12 @@ span {
   z-index: 10;
 }
 
+.navigation {
+  padding-bottom: 12px;
+}
+.navigation + .navigation {
+  border-top: 1px solid rgba(101, 103, 110, 0.1);
+}
 .navigation-container {
   padding: 28px 20px 0 28px;
 }
@@ -264,28 +288,12 @@ span {
   -o-user-select: none;
   user-select: none;
 }
-.navigation__item:last-child {
-  margin-bottom: 12px;
-}
 .navigation__item.active {
   color: #4c4f59;
   font-weight: bold;
 }
 .navigation__item:hover {
   background-color: #e5e6e5;
-}
-
-body {
-  height: 100vh;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  color: #65676e;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.app {
-  height: calc(100% - 44px);
 }
 
 .mail-list {
@@ -333,30 +341,20 @@ body {
   -o-user-select: none;
   user-select: none;
 }
-
-.list-item {
+.mail-list__item {
   position: relative;
+  gap: 8px;
   padding: 20px 28px;
   border-bottom: 1px solid #ededed;
   cursor: pointer;
 }
-.list-item:hover {
+.mail-list__item:hover {
   background-color: #ffffff;
 }
-.list-item.unread .list-item__subject::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: -16px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #379aff;
-}
-.list-item.active {
+.mail-list__item.active {
   background-color: #ffffff;
 }
-.list-item.active::before {
+.mail-list__item.active::before {
   content: "";
   position: absolute;
   top: 0;
@@ -365,16 +363,24 @@ body {
   height: 100%;
   background-color: #379aff;
 }
-.list-item__sender {
+.mail-list__item .sender {
   max-width: 150px;
 }
-.list-item__subject {
-  font-weight: bold;
-  margin-bottom: 8px;
+.mail-list__item .subject {
   position: relative;
 }
-.list-item__subject span {
+.mail-list__item .subject span {
   max-width: 200px;
+}
+.mail-list__item.unread .subject::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #379aff;
 }
 
 .actions-bar {
@@ -404,11 +410,11 @@ body {
   display: none;
   letter-spacing: 1px;
 }
-.actions-bar__item:hover {
-  background-color: rgba(143, 146, 157, 0.2352941176);
-}
 .actions-bar__item:hover::after {
   display: block;
+}
+.actions-bar__item:hover {
+  background-color: rgba(143, 146, 157, 0.2352941176);
 }
 
 .mail-view {
@@ -436,4 +442,17 @@ body {
 
 .message-actions {
   gap: 16px;
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #65676e;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.app {
+  height: calc(100% - 44px);
 }
